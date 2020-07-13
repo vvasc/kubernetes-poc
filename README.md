@@ -28,14 +28,16 @@ The following illustration represents the request flow for a single namespace.
 ## Creating the namespaces
 
 Create the namespaces YAML descriptors (https://kubernetes.io/docs/tasks/administer-cluster/namespaces-walkthrough). Example:
- 
+
+```yml
 apiVersion: v1
 kind: Namespace
 metadata:
   name: kubernetes-poc-staging
   labels:
   name: kubernetes-poc-staging
- 
+```
+
 #### create the Namespace resource from the YAML file
 
 ```
