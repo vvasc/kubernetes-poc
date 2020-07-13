@@ -1,0 +1,10 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: kubernetes-poc-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: kubernetes-poc-nodeport
+spec:
+  backend:
+    serviceName: kubernetes-poc-nodeport
+    servicePort: 80
